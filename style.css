@@ -1,0 +1,52 @@
+
+:root {
+    --primary-color: #003476 ;
+    --secunndary-color: #b4d2f7;
+    --header-size: 4rem;
+    --font: 1.8rem;
+
+}
+
+#clock-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    width: auto;
+  }
+
+  .hours, .minutes, .seconds {
+    margin: 0 10px;
+  }
+  
+  
+.hour, .minute, .second {
+    display: block;
+    padding: 55px;
+    background-color: #333;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .clock {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .hours, .minutes, .seconds {
+      margin: 10px 0;
+    }
+  }
